@@ -2,29 +2,29 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
+		<link rel="icon" href="../favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 		
-		<link href="./_app/immutable/assets/4.46a15ff7.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.8b3659fd.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.b95eede2.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.76989f01.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.e366ecea.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.5c1059de.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.754a5379.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/4.70e5fc0d.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/Header.f06d2dbe.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/axios.21b846bc.js">
+		<link href="../_app/immutable/assets/4.46a15ff7.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.c2dc0202.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.b95eede2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.162daf07.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.6c363831.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.5c1059de.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.7af7f9d4.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.70e5fc0d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Header.f06d2dbe.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/axios.21b846bc.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" data-svelte-h="svelte-1sn9eth"><div class="container-fluid"><a class="navbar-brand" href="/">API Tester</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> <div class="collapse navbar-collapse" id="navbarNavDropdown"><ul class="navbar-nav"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Methods</a> <ul class="dropdown-menu"><li><a class="dropdown-item" href="/GetPageMethod">Get</a></li> <li><a class="dropdown-item" href="/PostPageMethod">Post</a></li></ul></li></ul></div></div></nav> <br> <div class="container"><h4 data-svelte-h="svelte-9wrm6r">Post Method</h4> <br> <table><tr><td data-svelte-h="svelte-467avu"><h6>URL</h6></td> <td style="width: 100%;"><input type="text" class="form form-control" value=""></td></tr></table> <br> <div><table><tr><td><input type="text" placeholder="Key" class="form form-control" disabled value=""></td> <td><input type="text" placeholder="value" class="form form-control" disabled value=""></td> <td><button class="btn btn-success" disabled>+</button></td> <td><button class="btn btn-success" disabled>-</button></td></tr></table></div> <br>  <br> <button class="btn btn-success" data-svelte-h="svelte-1xk17h8">Send</button> <button class="btn btn-success" data-svelte-h="svelte-1hu9pv5">Reset</button>  <br> <br>  </div> 
 			
 			<script>
 				{
-					__sveltekit_10pqnh4 = {
-						base: new URL(".", location).pathname.slice(0, -1),
+					__sveltekit_e6p799 = {
+						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
 					};
 
@@ -33,8 +33,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.8b3659fd.js"),
-						import("./_app/immutable/entry/app.e366ecea.js")
+						import("../_app/immutable/entry/start.c2dc0202.js"),
+						import("../_app/immutable/entry/app.6c363831.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
